@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Karaba Mixed Secondary School</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>phone: 0721263625</span>
+                <span>email: karabamixedschool@yahoo.com</span>
+            </div>
+            <div class="social-info">
+                <span> Karaba Secondary Mixed Day School in Gikondi Ward, Mukurwe-ini sub County, Nyeri County
+            </span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo-area">
+                <img src="images/logo.jpeg" alt="Karaba Mixed Logo">
+                <div class="logo-text">
+                    <h1>Karaba Mixed</h1>
+                </div>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h2>School Gallery</h2>
+            <p>Our Life, Our Pride, Our Memories.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-nav">
+                <button class="gallery-btn active" onclick="filterGallery('all')">All</button>
+                <button class="gallery-btn" onclick="filterGallery('sports')">Sports</button>
+                <button class="gallery-btn" onclick="filterGallery('scouts')">Scouts</button>
+                <button class="gallery-btn" onclick="filterGallery('drama')">Drama & Music</button>
+                <button class="gallery-btn" onclick="filterGallery('structures')">New Structures</button>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/gallery/football.jpg" alt="Football Team">
+                    <div class="gallery-overlay"><h4>Regional Football Finals</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="structures">
+                    <img src="images/gallery/new-lab.jpg" alt="New Science Lab">
+                    <div class="gallery-overlay"><h4>New Science Complex</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="scouts">
+                    <img src="images/gallery/scouts1.jpg" alt="Scouts Parade">
+                    <div class="gallery-overlay"><h4>Scouts on Camping</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="scouts">
+                    <img src="images/gallery/scouts2.jpeg" alt="Scouts Parade">
+                    <div class="gallery-overlay"><h4>Scouts Tree Planting </h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="scouts">
+                    <img src="images/gallery/scouts3.jpeg" alt="Scouts Parade">
+                    <div class="gallery-overlay"><h4>Scouts on Camping</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="drama">
+                    <img src="images/gallery/drama1.jpg" alt="Drama Festival">
+                    <div class="gallery-overlay"><h4>National Drama Festivals</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="drama">
+                    <img src="images/gallery/drama2.jpg" alt="Drama Festival">
+                    <div class="gallery-overlay"><h4>National Drama Festivals</h4></div>
+                </div>
+
+                <div class="gallery-item" data-category="structures">
+                    <img src="images/gallery/gate.jpg" alt="New Gate">
+                    <div class="gallery-overlay"><h4>School Gate Renovation</h4></div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+                <p style="color: #666; font-style: italic;">
+                    📸 <strong>Stay Tuned!</strong> More images of recent events, class activities, and school projects will be uploaded soon.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Karaba Mixed Sec. School</h4>
+                    <p>Empowering students to reach their full potential through discipline and hard work.</p>
+                    <p style="margin-top: 15px; color: var(--secondary);"><em>"Enter To Learn, Depart To Serve"</em></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="staff.html">Staff Directory</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="academics.html">Sciences</a></li>
+                        <li><a href="academics.html">Humanities</a></li>
+                        <li><a href="ict.html">ICT & Computers</a></li>
+                        <li><a href="academics.html">Languages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Phone: 0721 263 625</li>
+                        <li>email: karabamixedschool@yahoo.com</li>
+                        <li> Po Box 358-10103, Mukurwe-ini</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Karaba Mixed Secondary School. All Rights Reserved. | Designed with Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery Filter Script
+        function filterGallery(category) {
+            let items = document.querySelectorAll('.gallery-item');
+            let buttons = document.querySelectorAll('.gallery-btn');
+
+            // Button Active State
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if(event && event.target) {
+                event.target.classList.add('active');
+            }
+
+            // Filter Logic
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hide');
+                    item.style.opacity = '0';
+                    setTimeout(() => item.style.opacity = '1', 50);
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        }
+
+        // Mobile Menu Script
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
